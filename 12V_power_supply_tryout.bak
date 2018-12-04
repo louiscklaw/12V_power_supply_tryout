@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:CNC-PCB-revamp-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -1715,6 +1714,7 @@ P 2300 4250
 AR Path="/5BFF1764/5C080E2B" Ref="J?"  Part="1" 
 AR Path="/5C064586/5C080E2B" Ref="J?"  Part="1" 
 AR Path="/5C066EFC/5C080E2B" Ref="J9"  Part="1" 
+AR Path="/5C080E2B" Ref="J9"  Part="1" 
 F 0 "J9" H 2355 4567 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 2355 4476 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2350 4210 50  0001 C CNN
@@ -1733,6 +1733,7 @@ P 2850 4600
 AR Path="/5BFF1764/5C080E34" Ref="#PWR?"  Part="1" 
 AR Path="/5C064586/5C080E34" Ref="#PWR?"  Part="1" 
 AR Path="/5C066EFC/5C080E34" Ref="#PWR0122"  Part="1" 
+AR Path="/5C080E34" Ref="#PWR0122"  Part="1" 
 F 0 "#PWR0122" H 2850 4350 50  0001 C CNN
 F 1 "GND" H 2855 4427 50  0000 C CNN
 F 2 "" H 2850 4600 50  0001 C CNN
@@ -1751,6 +1752,7 @@ P 2850 3900
 AR Path="/5BFF1764/5C080E3C" Ref="#PWR?"  Part="1" 
 AR Path="/5C064586/5C080E3C" Ref="#PWR?"  Part="1" 
 AR Path="/5C066EFC/5C080E3C" Ref="#PWR0123"  Part="1" 
+AR Path="/5C080E3C" Ref="#PWR0123"  Part="1" 
 F 0 "#PWR0123" H 2850 3750 50  0001 C CNN
 F 1 "+24V" H 2900 4100 50  0000 C CNN
 F 2 "" H 2850 3900 50  0001 C CNN
@@ -1765,6 +1767,7 @@ P 4600 3500
 AR Path="/5BFF1764/5C08167A" Ref="#PWR?"  Part="1" 
 AR Path="/5C064586/5C08167A" Ref="#PWR?"  Part="1" 
 AR Path="/5C066EFC/5C08167A" Ref="#PWR0137"  Part="1" 
+AR Path="/5C08167A" Ref="#PWR0137"  Part="1" 
 F 0 "#PWR0137" H 4600 3350 50  0001 C CNN
 F 1 "+24V" H 4650 3700 50  0000 C CNN
 F 2 "" H 4600 3500 50  0001 C CNN
@@ -1772,4 +1775,45 @@ F 3 "" H 4600 3500 50  0001 C CNN
 	1    4600 3500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C06C762
+P 10400 3750
+F 0 "J?" H 10500 3750 50  0000 L CNN
+F 1 "Conn_01x02" H 10500 3650 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10400 3750 50  0001 C CNN
+F 3 "~" H 10400 3750 50  0001 C CNN
+	1    10400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C06C7BE
+P 10000 3650
+F 0 "#PWR?" H 10000 3500 50  0001 C CNN
+F 1 "+12V" H 10015 3823 50  0000 C CNN
+F 2 "" H 10000 3650 50  0001 C CNN
+F 3 "" H 10000 3650 50  0001 C CNN
+	1    10000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C06C842
+P 10000 4050
+F 0 "#PWR?" H 10000 3800 50  0001 C CNN
+F 1 "GND" H 10050 3850 50  0000 C CNN
+F 2 "" H 10000 4050 50  0001 C CNN
+F 3 "" H 10000 4050 50  0001 C CNN
+	1    10000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4050 10000 3850
+Wire Wire Line
+	10000 3850 10200 3850
+Wire Wire Line
+	10200 3750 10000 3750
+Wire Wire Line
+	10000 3750 10000 3650
 $EndSCHEMATC
